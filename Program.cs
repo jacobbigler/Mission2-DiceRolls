@@ -48,7 +48,8 @@ public class Program
         for (int i = 2; i <= 12; i++)
         {
             //calculate percentage of times the combination was rolled
-            int percentage = results[i] * 100 / num;
+            double percentage = results[i] * 100 / num;
+            percentage = (int)Math.Round(percentage, 0);
 
             //print combination and its corresponding percentage using "*"
             System.Console.Write($"{i,2}: ");
